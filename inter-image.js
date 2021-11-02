@@ -1,8 +1,3 @@
-/* Sleep function **/
-function sleep(ms) {
-	return new Promise((resolve) => setTimeout(resolve, ms));
-}
-
 function randint(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
@@ -55,7 +50,7 @@ function render_text(t, x, y, w, h, s) {
     noStroke();
     render_images();
     textSize(s);
-    fill(color(255, 255, 255));
+    fill(color(185, 215, 132));
     text(t, x, y, w, h);
 }
 
@@ -101,13 +96,13 @@ function draw() {
     console.log(checkMouse(mouseX, mouseY, boarders))
     switch (checkMouse(mouseX, mouseY, boarders)) {
         case "0":
-            render_text(txt, windowWidth/3.1, windowHeight/20, windowWidth/3, windowHeight/4, 16);
+            render_text(cnfg["texts"][0], windowWidth/3.1, windowHeight/20, windowWidth/3, windowHeight/4, 16);
             break;
         case "1":
-            render_text(txt, windowWidth/3*2, windowHeight/20*10, windowWidth/3, windowHeight/4, 16);
+            render_text(cnfg["texts"][1], windowWidth/3*2, windowHeight/20*10, windowWidth/3, windowHeight/4, 16);
             break;
         case "2":
-            render_text(txt, windowWidth/60, windowHeight/2, windowWidth/4.2, windowHeight/2.1, 16);
+            render_text(cnfg["texts"][2], windowWidth/60, windowHeight/2, windowWidth/4.2, windowHeight/2.1, 16);
             break;
         default:
             render_images();
