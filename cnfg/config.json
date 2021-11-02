@@ -1,0 +1,23 @@
+{
+    "bg_color": "#002a19",
+    "images": [
+        {
+            "func": "image(imgs[0], 0, 0, windowWidth/4, windowHeight/2);",
+            "path": "assets/gs0.png",
+            "x": "0",
+            "y": "0"
+        },
+        {
+            "func": "image(imgs[1], windowWidth-windowWidth/4, 0, windowWidth/4, windowHeight/3);",
+            "path": "assets/gs1.png",
+            "x": "windowWidth-windowWidth/4",
+            "y": "0"
+        },
+        {
+            "func": "image(imgs[2], windowWidth/2-windowWidth/4, windowHeight-windowHeight/3, windowWidth/3, windowHeight/3);",
+            "path": "assets/gs2.png",
+            "x": "windowWidth/2-windowWidth/4",
+            "y": "windowHeight-windowHeight/3"
+        }
+    ]
+}
